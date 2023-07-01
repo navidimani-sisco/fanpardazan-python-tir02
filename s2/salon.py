@@ -10,6 +10,8 @@ rectangle_perimeter = 2 * length + 2 * width
 # 4. محاسبه محیط مربع
 square_length = math.sqrt(surface)
 square_perimeter = 4 * square_length
-# 5. چاپ محیط ها
-print("محیط مستطیل", rectangle_perimeter)
-print("محیط مربع", square_perimeter)
+# 5. یافتن بهترین محیط
+if square_perimeter < rectangle_perimeter:
+  print("مربع بهتر است")
+else:
+  print("مستطیل بهتر است")
